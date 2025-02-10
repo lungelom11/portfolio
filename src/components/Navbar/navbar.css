@@ -1,0 +1,45 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.menu-items ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  align-items: center;
+}
+
+.menu-items ul li{
+    font-weight: 500;
+    font-size: 1.1rem
+}
+
+.download-btn{
+    padding: .6rem;
+    color: #363434;
+    background-color: transparent;
+    border: 2px solid #363434;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.download-btn:hover{
+    background-color: #0c0c0c;
+    color: whitesmoke;
+}
