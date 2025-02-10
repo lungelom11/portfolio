@@ -9,6 +9,7 @@
 .main-text-container{
     display: flex;
     flex-direction: column;
+    text-align: start;
     gap: 2.5rem;
     max-width: 60%;
     padding: 2rem 0;
@@ -26,8 +27,26 @@
 
 .picture-grid{
     width: 100%;
+    position: relative;
+    padding-top: 2rem;
 }
 
 .picture-grid img{
     width: 250px;
+}
+
+.picture-grid .pic-1{
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+@media only screen and (max-width: 720px) {
+    .hero-container{
+        display: block;
+    }
+    .main-text-container{
+        max-width: 100%;
+        text-align: center;
+    }
 }

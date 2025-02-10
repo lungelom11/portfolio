@@ -1,6 +1,8 @@
 import Logo from "../../assets/command-line.png"
 import "./navbar.css"
 import { GoDownload } from "react-icons/go";
+import { CiMenuFries } from "react-icons/ci";
+
 
 
 const Navbar = () => {
@@ -12,17 +14,20 @@ const Navbar = () => {
         </div>
         <div className="menu-items">
           <ul>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Projects</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Projects</a></li>
             <li>
                 <button type="downlaod" className="download-btn">
-                  <GoDownload />
+                  <span className="download-icon"><GoDownload /></span>
                   Download CV
-                  </button>
+                </button>
             </li>
           </ul>
+        </div>
+        <div className="burger-menu">
+          <CiMenuFries />
         </div>
     </nav>
 

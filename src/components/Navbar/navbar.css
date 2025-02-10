@@ -9,10 +9,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
 }
 
 .logo img{
     width: 50px;
+}
+.menu-items{
+    display: block;
 }
 
 .menu-items ul{
@@ -28,18 +37,56 @@
     font-size: 1.1rem
 }
 
+.menu-items ul li a:hover{
+    color: #faa507;
+}
+
 .download-btn{
     padding: .6rem;
     color: #363434;
-    background-color: transparent;
-    border: 2px solid #363434;
+    background-color: #faa507;
+    border: 2px solid #faa507;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: all .3s ease-in;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .download-btn:hover{
-    background-color: #0c0c0c;
-    color: whitesmoke;
+    background-color: #faa507c9;
+}
+
+.download-icon{
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+.burger-menu{
+    font-size: 1.5rem;
+    display: none;
+}
+
+.socials .github-icon{
+    font-size: large;
+}
+
+
+@media only screen and (max-width: 720px) {
+
+    .nav-container{
+        justify-content: space-around;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+    .menu-items{
+        display: none;
+    }
+    
+    
 }

@@ -17,13 +17,18 @@ const Hero = () => {
           <button>Explore my work</button>
           <button>Let's Collaborate</button>
         </div>
+        <div className="project-count">
+          <h1>+11 Projects</h1>
+        </div>
       </div>
 
       <div className="picture-grid">
-        <img src={Pic1} alt="" />
+        <img className="pic-1" src={Pic1} alt="" />
         <img src={Pic2} alt="" />
         <img src={Pic3} alt="" />
       </div>
+
+      
     </div>
   )
 }
